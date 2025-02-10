@@ -61,7 +61,7 @@ ggplot(data=Rdata, aes(x=as.factor(Removal.Activity), group = x))+
   scale_color_manual(values=c("black", "dodgerblue1","chartreuse3"),breaks=c("OPC Concrete","OPC Mortar","OPC Fly Ash"), labels=c("OPC Concrete","OPC Mortar","OPC Fly Ash"))+
   scale_fill_manual(values=c("black", "dodgerblue1","chartreuse3"),breaks=c("OPC Concrete","OPC Mortar","OPC Fly Ash"), labels=c("OPC Concrete","OPC Mortar","OPC Fly Ash"))+
   scale_x_discrete(labels = c("Broom"="Sweeping", "Cotton"="Mopping", "Shoe" = "Walking"))
-ggsave("PerRemoval.png",dpi=330, path = "~/Library/CloudStorage/OneDrive-Personal/Documents/Claire School/Grad School/Lab/E. coli Concrete/", width = 5, height = 3, device='png')
+ggsave("PerRemoval.png",dpi=330, path = "~/", width = 5, height = 3, device='png')
 
 #Survival
 soil <- c("no"="Soil Absent", "yes"="Soil Present", "Low Temp" = "Dry Season\n(15°C, 75% RH)", "High Temp" = "Wet Season\n(34°C, 75% RH)")
@@ -102,7 +102,7 @@ ggplot(data=Sdata, aes(x=(Time..min.)/60, group = Mix.Design))+
   scale_shape_manual(values=c(21, 24, 22),breaks=c("Concrete Mix","Mortar Mix","Fly Ash Mix"), labels=c("OPC Concrete","OPC Mortar","OPC Fly Ash"))+
   scale_color_manual(values=c("black", "dodgerblue1","chartreuse3"),breaks=c("Concrete Mix","Mortar Mix","Fly Ash Mix"), labels=c("OPC Concrete","OPC Mortar","OPC Fly Ash"))+
   scale_fill_manual(values=c("black", "dodgerblue1","chartreuse3"),breaks=c("Concrete Mix","Mortar Mix","Fly Ash Mix"), labels=c("OPC Concrete","OPC Mortar","OPC Fly Ash"))
-ggsave("Survival.png",dpi=330, path = "~/Library/CloudStorage/OneDrive-Personal/Documents/Claire School/Grad School/Lab/E. coli Concrete/", width = 9, height = 6, device='png')
+ggsave("Survival.png",dpi=330, path = "~/", width = 9, height = 6, device='png')
 
 
 ####STATISTICS####
